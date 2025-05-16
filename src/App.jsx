@@ -8,7 +8,9 @@ import UseReducerCheck from './pages/UseReducerCheck';
 import UseImmerCheck from './pages/UseImmerCheck';
 import UseMemoCheck from './pages/UseMemoCheck';
 import UseContextCheck from './pages/UseContextCheck';
+
 import './App.css';
+import UseCallbackCheck from './pages/UseCallbackCheck';
 
 function App() {
   // // useEffect_1
@@ -44,6 +46,8 @@ function App() {
           <br />
           <Link to="/UseContextCheck">UseContext</Link>
           <br />
+          <Link to="/UseCallbackCheck">UseCallback</Link>
+          <br />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/UseEffectCheck" element={<UseEffectCheck />} />
@@ -53,6 +57,7 @@ function App() {
             <Route path="/UseImmerCheck" element={<UseImmerCheck />} />
             <Route path="/UseMemoCheck" element={<UseMemoCheck />} />
             <Route path="/UseContextCheck" element={<UseContextCheck />} />
+            <Route path="/UseCallbackCheck" element={<UseCallbackCheck />} />
           </Routes>
         </BrowserRouter>
       </div>
