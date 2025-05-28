@@ -10,10 +10,10 @@ import UseReducerCheck from './pages/UseReducerCheck';
 import UseImmerCheck from './pages/UseImmerCheck';
 import UseMemoCheck from './pages/UseMemoCheck';
 import UseContextCheck from './pages/UseContextCheck';
-
-import './App.css';
 import UseCallbackCheck from './pages/UseCallbackCheck';
 import UseSWRCheck from './pages/UseSWRCheck';
+import UseSWRCheck2 from './pages/UseSWRCheck2';
+import './App.css';
 
 function App() {
   // // useEffect_1
@@ -57,6 +57,8 @@ function App() {
           <br />
           <Link to="/UseSWRCheck">UseSWR</Link>
           <br />
+          <Link to="/UseSWRCheck2">UseSWR2</Link>
+          <br />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/UseStateCheck" element={<UseStateCheck />} />
@@ -70,6 +72,7 @@ function App() {
             <Route path="/UseContextCheck" element={<UseContextCheck />} />
             <Route path="/UseCallbackCheck" element={<UseCallbackCheck />} />
             <Route path="/UseSWRCheck" element={<UseSWRCheck />} />
+            <Route path="/UseSWRCheck2" element={<UseSWRCheck2 />} />
           </Routes>
         </BrowserRouter>
       </div>
