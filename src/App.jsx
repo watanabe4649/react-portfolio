@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import UseEffectCheck from './pages/UseEffectCheck';
+import UseEffectCheck2 from './pages/UseEffectCheck2';
+import UseEffectCheck3 from './pages/UseEffectCheck3';
 import UseStateCheck from './pages/UseStateCheck';
 import UseRefCheck from './pages/UseRefCheck';
 import UseReducerCheck from './pages/UseReducerCheck';
@@ -11,6 +13,7 @@ import UseContextCheck from './pages/UseContextCheck';
 
 import './App.css';
 import UseCallbackCheck from './pages/UseCallbackCheck';
+import UseSWRCheck from './pages/UseSWRCheck';
 
 function App() {
   // // useEffect_1
@@ -32,9 +35,13 @@ function App() {
         <BrowserRouter>
           <Link to="/">Home</Link>
           <br />
+          <Link to="/UseStateCheck">UseState</Link>
+          <br />
           <Link to="/UseEffectCheck">UseEffect</Link>
           <br />
-          <Link to="/UseStateCheck">UseState</Link>
+          <Link to="/UseEffectCheck2">UseEffect2</Link>
+          <br />
+          <Link to="/UseEffectCheck3">UseEffect3</Link>
           <br />
           <Link to="/UseRefCheck">UseRef</Link>
           <br />
@@ -48,16 +55,21 @@ function App() {
           <br />
           <Link to="/UseCallbackCheck">UseCallback</Link>
           <br />
+          <Link to="/UseSWRCheck">UseSWR</Link>
+          <br />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/UseEffectCheck" element={<UseEffectCheck />} />
             <Route path="/UseStateCheck" element={<UseStateCheck />} />
+            <Route path="/UseEffectCheck" element={<UseEffectCheck />} />
+            <Route path="/UseEffectCheck2" element={<UseEffectCheck2 />} />
+            <Route path="/UseEffectCheck3" element={<UseEffectCheck3 />} />
             <Route path="/UseRefCheck" element={<UseRefCheck />} />
             <Route path="/UseReducerCheck" element={<UseReducerCheck />} />
             <Route path="/UseImmerCheck" element={<UseImmerCheck />} />
             <Route path="/UseMemoCheck" element={<UseMemoCheck />} />
             <Route path="/UseContextCheck" element={<UseContextCheck />} />
             <Route path="/UseCallbackCheck" element={<UseCallbackCheck />} />
+            <Route path="/UseSWRCheck" element={<UseSWRCheck />} />
           </Routes>
         </BrowserRouter>
       </div>

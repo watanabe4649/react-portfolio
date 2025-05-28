@@ -19,3 +19,7 @@ const UseRefCheck = () => {
 };
 
 export default UseRefCheck;
+
+// useRef書き方
+// const 変数 = useRef(初期値);
+// useRefは、レンダリングのたびに値を保持したい場合に利用されます。
